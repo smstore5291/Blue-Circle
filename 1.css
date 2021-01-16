@@ -1,0 +1,237 @@
+  body { 
+      background: #ffff;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  margin: 0;
+	  font-family: Verdana;
+	  overflow: auto;
+  }
+  
+    
+
+  .bgbtn {
+	  position: fixed;
+	  bottom: 16px;
+	  background: #0062FF;
+	  color: white;
+	  padding: 10px 12px;
+	  font-size: 16px;
+	  right: 10px;
+	  border-radius: 15px;
+	  outline: none;
+	  border: 1px solid #fff;
+	  cursor: pointer;
+	  box-shadow: 0 1px 6px 1px #125ED7;
+	  transition: 0.3s ease;
+  }
+  .bgbtn:hover {
+	  border: 2px solid #fff;
+	  transform: translateY(5px);
+	  
+  }
+  
+  .bgbtn:active {
+	  box-shadow: 0 1px 10px 1px #125ED7;
+	  opacity: 0.7;
+	  transform: translateY(5px);
+  }
+  .header {
+	  padding-top: 50px;
+	  float: center;
+	  text-align: center;
+	  overflow: hidden;
+	  width: 100%;
+	  color: black;
+  }
+  .img1 {
+	  vertical-align: middle;
+	  pointer-events: none;
+	  
+  }
+  
+  .account {
+	  padding: 10px 20px;
+  }
+ 
+ a {
+	  color: #038BFF;
+	  float: right;
+	  text-decoration: none;
+	  padding-top: 5px;
+	  padding-right: 35px;
+	  vertical-align: middle;
+  } 
+  a:hover {
+	  color: #2D5CA6;
+	  opacity: 0.8;
+  }
+  
+  .img4 {
+	  border-radius: 50%;
+	  float: right;
+	  vertical-align: middle;
+	  
+	  cursor: pointer;
+	  transition: 0.3s ease;
+  }
+  
+  .img4:hover {
+	  box-shadow: 0px 1px 6px 1px #BFBFBF;
+  }
+  
+  .search {
+	  width: 100%;
+	  float: center;
+	  text-align: center;
+	 
+  }
+  .input1 {
+	  float: center;
+	  font-size: 17px;
+	  padding: 12px 10px 10px 45px;
+	  border: 1px solid #fff;
+	  outline: none;
+	  background-image: url('https://www.w3schools.com/howto/searchicon.png');
+      background-position: 15px 13px; 
+      background-repeat: no-repeat;
+	  border-top-left-radius: 39px;
+	  border-bottom-left-radius: 39px;
+	  box-shadow: 0 3px 5px 1px #BFBFBF;
+	  width: 40%;
+	  height: 50px;
+  }
+  .input1:focus {
+	  box-shadow: 0 3px 9px 1px #91A1BA;
+  }
+  .btn1 {
+	  float: center;
+	  font-size: 17px;
+	  padding: 12px 10px 10px 0px;
+	  border-bottom-right-radius: 39px;
+	  background: #fff;
+	  border-top-right-radius: 39px;
+	  outline: none;
+	  border: 1px solid #fff;
+	  box-shadow: 0 3px 5px 1px #BFBFBF;
+	  width: 5%;
+	  cursor: pointer;
+	  height: 50px;
+	  transition: 0.2s ease;
+	  
+  }
+  .btn1:hover {
+	  opacity: 0.8;
+	  box-shadow: 0 3px 6px 1px #BFBFBF;
+  }
+  
+  .btn1:active {
+	  box-shadow: 0 3px 9px 1px #91A1BA;
+  }
+ 
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bg {
+	cursor: pointer;
+}
+.bg:hover {
+	box-shadow: 0 2px 5px 2px #6D6F70;
+}
+
+  
+  
+  @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .header {
+    width: 100%;
+	padding-top:50px;
+  }
+  .search {
+    width: 100%;
+  }
+  .input1 {
+	  width: 100%;
+	  border-radius: 0%;
+	  position: fixed;
+	  top: 0;
+	  left: 0px;
+  }
+  .btn1 {
+	  border-radius: 0%;
+	  position: fixed;
+	  top: 0;
+	  right: 0px;
+	  width: 10%;
+	  box-shadow: 0 0 0 0 #BFBFBF;
+	  padding: 12px 12px 12px 12px;
+  }
+  
+  .img3 {
+	  width: 100%;
+  }
+ .img1 {
+	  vertical-align: middle;
+	  width: 20%;
+  }
+  .account {
+	  padding: 50px 10px;
+	  font-size: 15px;
+  }
+  .bg {
+	cursor: pointer;
+	width: 50%;
+}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .header, .search {
+    width: 100%;
+	
+  }
+  .img3 {
+	  width: 100%;
+  }
+  .img1 {
+	  vertical-align: middle;
+	  width: 10%;
+  }
+  .bg {
+	cursor: pointer;
+	width: 45%;
+}
+}
